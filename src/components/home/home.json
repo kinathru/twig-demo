@@ -1,0 +1,18 @@
+{
+    "title": "Welcome to Our Website",
+    "description": "We provide innovative solutions for your business needs.",
+    "features": [
+        {
+            "title": "Feature 1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "Feature 2",
+            "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "title": "Feature 3",
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+    ]
+}

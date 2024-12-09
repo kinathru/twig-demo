@@ -1,0 +1,21 @@
+{
+    "title": "Contact Us",
+    "description": "Get in touch with us. We'd love to hear from you!",
+    "address": "123 Business Street, City, Country",
+    "email": "info@example.com",
+    "phone": "+1 234 567 8900",
+    "businessHours": [
+        {
+            "days": "Monday - Friday",
+            "time": "9:00 AM - 6:00 PM"
+        },
+        {
+            "days": "Saturday",
+            "time": "10:00 AM - 4:00 PM"
+        },
+        {
+            "days": "Sunday",
+            "time": "Closed"
+        }
+    ]
+}

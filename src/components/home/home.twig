@@ -1,0 +1,23 @@
+{% extends "layout/base.twig" %}
+
+{% block title %}Home - {{ data.title }}{% endblock %}
+
+{% block content %}
+<div class="home-component">
+    <h1>{{ data.title }}</h1>
+    <p class="lead">{{ data.description }}</p>
+    
+    <div class="row mt-4">
+        {% for feature in data.features %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ feature.title }}</h5>
+                    <p class="card-text">{{ feature.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

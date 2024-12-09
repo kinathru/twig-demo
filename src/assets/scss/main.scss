@@ -1,0 +1,14 @@
+// Import Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Common styles
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+// Component styles
+@import "components/home";
+@import "components/about";
+@import "components/contact";
+@import "components/header";
+@import "components/footer";

@@ -1,0 +1,27 @@
+{
+    "title": "About Us",
+    "description": "Learn more about our company and our dedicated team.",
+    "story": "Founded in 2020, our company has been at the forefront of innovation. We believe in creating solutions that make a difference in people's lives.",
+    "team": [
+        {
+            "name": "John Doe",
+            "position": "CEO",
+            "bio": "John has over 15 years of experience in the industry."
+        },
+        {
+            "name": "Jane Smith",
+            "position": "CTO",
+            "bio": "Jane leads our technical initiatives with passion."
+        },
+        {
+            "name": "Mike Johnson",
+            "position": "Design Lead",
+            "bio": "Mike brings creativity to every project."
+        },
+        {
+            "name": "Sarah Wilson",
+            "position": "Marketing Director",
+            "bio": "Sarah drives our market presence and growth."
+        }
+    ]
+}

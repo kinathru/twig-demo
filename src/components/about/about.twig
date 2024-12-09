@@ -1,0 +1,33 @@
+{% extends "layout/base.twig" %}
+
+{% block title %}About Us - {{ data.title }}{% endblock %}
+
+{% block content %}
+<div class="about-component">
+    <h1>{{ data.title }}</h1>
+    <p class="lead">{{ data.description }}</p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Our Story</h2>
+            <p>{{ data.story }}</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Our Team</h2>
+            <div class="row">
+                {% for member in data.team %}
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ member.name }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ member.position }}</h6>
+                            <p class="card-text">{{ member.bio }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

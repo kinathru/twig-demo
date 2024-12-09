@@ -1,0 +1,10 @@
+.home-component {
+    .card {
+        height: 100%;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
