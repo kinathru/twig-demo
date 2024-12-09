@@ -39,6 +39,7 @@ project/
 │   │   ├── home/
 │   │   └── layout/
 │   └── bootstrap.php    # Application bootstrap
+└── styleguide/          # Fractal component library
 ```
 
 ## Installation
@@ -87,29 +88,67 @@ project/
 
 ## Running the Application
 
-1. Using PHP's built-in server:
-   ```bash
-   cd public
-   php -S localhost:8000
-   ```
+You can run the application in two ways:
 
-2. Or configure your web server (Apache/Nginx) to point to the `public` directory as the web root.
+### 1. PHP Development Server
+```bash
+cd public
+php -S localhost:8000
+```
 
-3. Access the website:
-   - Home page: http://localhost:8000
-   - About page: http://localhost:8000/about
-   - Contact page: http://localhost:8000/contact
+### 2. Component Development (Fractal)
+```bash
+# Start Fractal server with live reload
+npm run fractal:start
+
+# Or build static component library
+npm run fractal:build
+```
+
+Access the applications:
+- Main Website: http://localhost:8000
+- Component Library: http://localhost:3000 (when using Fractal server)
 
 ## Development
+
+### Component Development with Fractal
+
+This project uses Fractal for component development and documentation. Fractal provides an isolated environment to develop and test components independently.
+
+1. Start the Fractal development server:
+   ```bash
+   npm run fractal:start
+   ```
+   This will start a local server (usually at http://localhost:3000) with live reload capabilities.
+
+2. Build a static version of the component library:
+   ```bash
+   npm run fractal:build
+   ```
+   This will generate a static HTML version of your component library in the `styleguide` directory.
+
+### Component Structure
+Each component should include:
+- `.twig` file - The component template
+- `.config.js` file - Component configuration and variants
+- `README.md` file - Component documentation
+- Related SCSS in `src/assets/scss/components/`
+
+Example:
+```
+components/
+└── button/
+    ├── button.twig
+    ├── button.config.js
+    └── README.md
+```
 
 ### Adding New Components
 
 1. Create a new directory in `src/components/`
-2. Add the following files:
-   - `component-name.twig` - Component template
-   - `component-name.json` - Component data
-   - Add SCSS in `src/assets/scss/components/_component-name.scss`
-   - Import the SCSS file in `src/assets/scss/main.scss`
+2. Add the required files (template, config, documentation)
+3. Add corresponding SCSS in `src/assets/scss/components/`
+4. Import the SCSS file in `src/assets/scss/main.scss`
 
 ### Modifying Styles
 

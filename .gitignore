@@ -31,3 +31,8 @@ yarn-error.log*
 # Lock files (optional, you might want to keep composer.lock and package-lock.json in version control)
 # composer.lock
 # package-lock.json
+
+# Fractal
+/styleguide
+.fractal
+build
